@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pepsi</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+      }
+      h1{
+        text-align: center;
+        color: blue;
+        font-weight: bolder;
+      }
+      .main {
+  width: 40%;
+  margin: 0% auto;
+  height: 500px;
+  background-color: rgb(37, 105, 252);
+  padding: 7% 10%;
+}
+form {
+  background-color: white;
+
+  padding-top: 10%;
+  width: 80%;
+  height: 400px;
+  margin: 0% auto;
+  border: 2px solid;
+  border-color: rgb(37, 105, 252);
+  border-style: double;
+  margin-bottom: 10%;
+}
+.inputmain {
+  width: 80%;
+  margin: 0% auto;
+  align-items: center;
+}
+.input {
+  width: 90%;
+  height: 50px;
+  margin: 10px 0px;
+  background-color: rgb(226, 226, 226);
+  border: none;
+  padding-left: 10%;
+  font-size: medium;
+}
+.input:focus {
+  outline-color: rgb(37, 105, 252);
+}
+.submit{
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px;
+  background-color: rgb(37, 105, 252);
+  color: white;
+  border: none;
+  /* padding-left: 10%; */
+  font-size: larger;
+}
+.submit a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.submit:hover {
+  background-color: rgb(102, 143, 255);
+}
+.formImg{
+  width: 30%;
+  height: 100px;
+  margin: 0% auto;
+}
+form img{
+  width: 100%;
+  height: 100%;
+  margin: 0% auto;
+}
+
+@media (max-width: 800px) {
+  .main {
+    width: 100%;
+    margin: 0% auto;
+    height: 220px;
+    background-color: rgb(37, 105, 252);
+    padding: 3% 0%;
+  }
+  form {
+    background-color: white;
+
+    padding: 20px 0%;
+    width: 90%;
+    height: 180px;
+    margin: 0% auto;
+    border: 2px solid;
+    border-color: rgb(37, 105, 252);
+    border-style: double;
+  }
+  .inputmain {
+    width: 80%;
+    margin: 0% auto;
+    align-items: center;
+  }
+  .input {
+    width: 90%;
+    height: 35px;
+    margin: 3px 0px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    padding-left: 10%;
+    font-size: medium;
+  }
+  .input:focus {
+    outline-color: rgb(37, 105, 252);
+  }
+  .submit a{
+    width: 100%;
+    height: 35px;
+    margin: 3px 0px;
+    background-color: rgb(37, 105, 252);
+    color: white;
+    border: none;
+    /* padding-left: 10%; */
+    font-size: larger;
+  }
+}
+@media (max-width: 400px) {
+  .main {
+    width: 100%;
+    margin: 0% auto;
+    height: 600px;
+    background-color: rgb(37, 105, 252);
+    padding: 5% 0%;
+  }
+  form {
+    background-color: white;
+
+    padding-top: 10%;
+    width: 90%;
+    height: 500px;
+    margin: 0% auto;
+    border: 2px solid;
+    border-color: rgb(37, 105, 252);
+    border-style: double;
+    margin-bottom: 10%;
+  }
+  .inputmain {
+    width: 80%;
+    margin: 0% auto;
+    align-items: center;
+  }
+  .input {
+    width: 90%;
+    height: 50px;
+    margin: 10px 0px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    padding-left: 10%;
+    font-size: medium;
+  }
+  .input:focus {
+    outline-color: rgb(37, 105, 252);
+  }
+  .submit {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    background-color: rgb(37, 105, 252);
+    color: white;
+    border: none;
+    /* padding-left: 10%; */
+    font-size: larger;
+  }
+  .submit:hover {
+  background-color: rgb(102, 143, 255);
+}
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+      <form id="myForm">
+        <h1>SignUp</h1>
+        <div class="inputmain">
+          <input type="text" id="UserName" class="input" placeholder="User Name">
+          <input type="text" id="phone" class="input" placeholder="Phone Number">
+          <input type="email" id="email" class="input" placeholder="Email Address">
+          <button type="submit" class="submit"><a href="#">Submit</a></button>
+        </div>
+        <div class="formImg">
+          <img src="./Images/pepsiLogoinImg.png" alt="">
+        </div>
+      </form>
+      </div>
+
+
+<script src="app.js"></script>
+  
+
+  </body>
+  
+  
+</html>
