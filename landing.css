@@ -603,7 +603,7 @@ button:hover {
     flex-direction: column;
   }
   .content .imgbox{
-    width: 430px;
+    width: 100%;
     display: flex;
     /* padding-left: 50px; */
     /* padding-right: 0px; */
