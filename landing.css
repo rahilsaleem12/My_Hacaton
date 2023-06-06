@@ -1,28 +1,12 @@
 
 
-/* Header with media */
 *{
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
 }
-/* .main{
-  width: 100%;
-  background-image: url(./Images/gym7.jpg);
-} */
-.sec{
-  z-index: 3;
-  position: relative;
-  /* height: 1000px; */
-  width: 100%;
-  /* min-height: 10vh; */
-  padding: 100px 100px;
-  /* display: flex; */
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1e1e1e;
-  transition: 0.5s;
-}
+/* Header with media */
+
 .navicon{
   display: none;
 }
@@ -43,9 +27,7 @@ header a .logoHeader{
   width: 80px ;
   height: 80px;
 }
-/* .logoHeader img{
 
-} */
 header ul{
   position: relative;
   display: flex;
@@ -82,6 +64,125 @@ header ul li a{
   transition: 0.5s;
   transform: skew(-15deg);
 }
+@media (max-width: 750px) {
+  header{
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+  
+  }
+  header ul li a{
+    margin: 0 !important;
+    /* text-decoration: none; */
+    text-align: center;
+    padding: 10px 50px;
+    border-bottom: 2px solid gray;
+  
+  }
+  .signInUp .sign a{
+    position: relative;
+    right: 100%;
+  }
+ 
+  .navUl {
+      display: none;
+      background-color: rgb(70, 70, 70);
+      color: black;
+      position: relative;
+      left: 50%;
+      top: 80px;
+      z-index: 3;
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+  }
+  /* .navUl li{
+
+  } */
+  header ul li{
+    margin: 0%;
+padding: 0%;
+  }
+  .navicon {
+      display: block;
+  }
+  .content{
+    flex-direction: column;
+  }
+  header a .logoHeader{
+    width: 40px;
+    height: 40px;
+  }
+  
+
+}
+@media (max-width: 450px) {
+  header{
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+  
+  }
+  .navUl {
+      display: none;
+  }
+  header a .logoHeader{
+    width: 50px;
+    height: 50px;
+  }
+  .navicon {
+      display: block;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+  
+  }
+  header ul li a{
+    margin: 0 !important;
+    /* text-decoration: none; */
+    text-align: center;
+    padding: 10px 50px;
+    border-bottom: 2px solid gray;
+  
+  }
+  .signInUp .sign a{
+    position: relative;
+    right: 20%;
+  }
+ 
+  .navUl {
+      display: none;
+      background-color: rgb(70, 70, 70);
+      color: black;
+      position: relative;
+      left: 40%;
+      top: 80px;
+      z-index: 3;
+      text-align: center;
+      padding: 0%;
+      margin: 0%;
+  }
+}
+
+
+
+
+.sec{
+  z-index: 3;
+  position: relative;
+  /* height: 1000px; */
+  width: 100%;
+  /* min-height: 10vh; */
+  padding: 100px 100px;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  transition: 0.5s;
+}
+
 
 .content{
   position: relative;
@@ -144,16 +245,10 @@ color: white;
   display: block;
 }
 .thumb{
-  /* width: 100%;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-10%); */
+
   justify-content: center;
   display: flex;
   margin-top: 50px;
-/* display: block; */
 }
 .thumb li{
   list-style: none;
@@ -163,9 +258,7 @@ color: white;
   transition: 0.5s;
 
 }
-/* .pepsiTin2{
-  width: 100px !important;
-} */
+
 .thumb li img{
   max-width: 50px;
 
@@ -198,7 +291,6 @@ color: white;
 
 .section3 .container #tin img{
   width: 40%;
-  /* padding-top:  1rem; */
 }
 .section3 .container #tin .Content{
   font-size: 12px;
@@ -475,16 +567,7 @@ button:hover {
 
   
 @media (max-width: 750px) {
-  header{
-    position: absolute;
-    width: 100%;
-    padding: 0 20px;
-  
-  }
- 
-  .navUl {
-      display: none;
-  }
+
   .navicon {
       display: block;
   }
@@ -492,16 +575,12 @@ button:hover {
     flex-direction: column;
   }
   .content .imgbox{
-    width: 400px;
+    width: 300px;
     display: flex;
     padding-right: 0px;
-    /* justify-content: flex-end; */
+    justify-content: center;
     margin-top: 50px;
-    margin: au;
-  }
-  header a .logoHeader{
-    width: 40px;
-    height: 40px;
+    /* margin: au; */
   }
   .content .textbox{
     position: relative;
@@ -519,18 +598,7 @@ button:hover {
   }
 }
 @media (max-width: 400px) {
-  header{
-    position: absolute;
-    width: 100%;
-    padding: 0 20px;
   
-  }
-  .navUl {
-      display: none;
-  }
-  .navicon {
-      display: block;
-  }
   .content{
     flex-direction: column;
   }
@@ -542,10 +610,6 @@ button:hover {
     /* justify-content: flex-end; */
     margin-top: 50px;
     /* margin: auto; */
-  }
-  header a .logoHeader{
-    width: 50px;
-    height: 50px;
   }
   .content .textbox{
     position: relative;
