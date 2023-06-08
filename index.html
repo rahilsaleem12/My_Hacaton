@@ -27,14 +27,16 @@
   
 
 
-<section class="sec">
-  <header>
+<section class="section1">
+  <header class="header">
     <a href=""><img src="./Images/pepsi.png" class="logoHeader"></a>
     
     <ul class="navUl">
-        <li><a href="#">Home</a></li>
-        <li><a href="#tin">Products</a></li>
-        <li><a href="#">Whats New</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="#section4">Whats New</a></li>
+        <li><a href="#">Dealers</a></li>
+        <li><a href="#">Contact</a></li>
 
     </ul>
     <ul class="signInUp">
@@ -54,11 +56,11 @@
       <p>Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.
 
       </p>
-      <a href="#product">View All Products</a>
+      <a href="./products.html" class="viewAllProducts">View All Products</a>
       <ul class="thumb">
-        <li><img src="./Images/PepsiTin.png" onclick="imgSlider('./Images/PepsiTin.png');changeBgColor('#00a0d9')" class="pepsiTin1"></li>
-        <li><img src="./Images/pepsi silver.png" onclick="imgSlider('./Images/pepsi silver.png');changeBgColor('#e60c2c')" class="pepsiTin2"></li>
-        <li><img src="./Images/pepsiBlackNew.png" onclick="imgSlider('./Images/pepsiBlackNew.png');changeBgColor('#1e1e1e')" class="pepsiTin3"></li>
+        <li><img src="./Images/pepsiBlackNew.png" onclick="imgSlider('./Images/pepsiBlackNew.png');changeBgColor('#1e1e1e');changeBgColorHeader('#000000')"></li>
+        <li><img src="./Images/pepsi silver.png" onclick="imgSlider('./Images/pepsi silver.png');changeBgColor('#e60c2c');changeBgColorHeader('#e60c2c')"></li>
+        <li><img src="./Images/PepsiTin.png" onclick="imgSlider('./Images/PepsiTin.png');changeBgColor('#0072F3');changeBgColorHeader('#0072F3')"></li>
       </ul>
     </div>
     <div class="imgbox">
@@ -66,94 +68,40 @@
     </div>
   </div>
 
- 
-
 </section>
+<div class="section4" id="section4">
+<img src="./Images/banner0Sugar.png" alt="">
+</div>
 
 <div class="section2">
   <video controls="" controlslist="nodownload noremoteplayback" width="100%" class="hero__video" kind="captions" type="video/mp4" src="https://www.pepsi.com/en-us/uploads/media/PepsiWildCherry.Copier.15.mp4" poster="https://www.pepsi.com/en-us/uploads/media/Cherry-Copier.png" autoplay="true" loop="true" playsinline="true" muted="true"></video>
 </div>
+<section class="section5">
+  <div class="sec5left">
+<h1>ALL YOUR <br> FAVORITE FLAVORS <br> ALL RIGHT HERE.</h1>
+<p>
+  Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.
+</p>
+<a href="./products.html" class="viewAllProducts">View All Products</a>
+
+  </div>
+  <div class="sec5right">
+<img src="./Images/3in1Image.png" alt="">
+  </div>
+</section>
 
 
-<div class="gallery">
+<section class="section6">
+  <div class="sec6left">
+<img src="./Images/section6BlackTin.png" alt="">
+  </div>
+  <div class="sec6right">
+    <h1> NEW LOOK</h1>
+    <H2>ZERO SUGAR</H2>
+    <H3>ZERO COMPROMIZE</H3>
+  </div>
+</section>
 
-  <div class="box-container" id="product">
-    <div class="box">
-        <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" alt="">
-        <div class="content" id="tin1">
-            <h3>Pepsi</h3>
-        </div>
-    </div>
-    <div class="box">
-      <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png" alt="">
-      <div class="content" id="tin2">
-          <h3>Pepsi 0 sugar</h3>
-      </div>
-  </div>
-  <div class="box">
-    <img src="https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735" alt="">
-    <div class="content" id="tin3">
-        <h3>Pepsi Diet </h3>
-    </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/nitro/PEP_NItro_DraftCola_Can_Vanilla.png" alt="">
-  <div class="content" id="tin4">
-      <h3>Nintro Pepsi Vanilla</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/nitro/PEP_NItro_DraftCola_Can.png" alt="">
-  <div class="content" id="tin5">
-      <h3>Nintro Pepsi</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-mango.png" alt="">
-  <div class="content" id="tin6">
-      <h3>Pepsi Mango</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar-mango.png" alt="">
-  <div class="content" id="tin7">
-      <h3>Pepsi 0 sugar mango</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-cherry-v2.png?mtime=20180110134748" alt="">
-  <div class="content" id="tin8">
-      <h3>Pepsi Wild Cherry</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-Cherry-v3_12oz.png?mtime=20180215173734" alt="">
-  <div class="content" id="tin9">
-      <h3>Deit best quality food</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/Pepsi-Zero-Wild-Cherry-12oz-refreshed-v2.png?mtime=20180403114210" alt="">
-  <div class="content" id="tin10">
-      <h3>Pepsi 0 sugar wild Cherry</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/can-real-sugar-reg.png?mtime=20180110134758" alt="">
-  <div class="content" id="tin11">
-      <h3>Pepsi Real Sugar</h3>
-  </div>
-</div>
-<div class="box">
-  <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-caffeine-free.png?mtime=20180110134746" alt="">
-  <div class="content" id="tin12">
-      <h3>Pepsi Caffein Free</h3>
-  </div>
-
-</div>
-</div>
-
-</div>
 
 
 
@@ -174,7 +122,7 @@
             src="./Images/pepsi.png"
             alt=""
           />
-          <p>Site by <b>Brisbane</b></p>
+          <p> <b>pepsi</b></p>
         </div>
         <div class="footersec">
           <h3>Section</h3>
@@ -211,7 +159,7 @@
           </div>
         </div>
       </footer>
-      <section class="sec2"></section>
+      
     </div>
 
 
@@ -221,18 +169,25 @@ function imgSlider(anything){
 document.querySelector(".boxImg").src = anything;
 }
 function changeBgColor(color){
-const sec = document.querySelector(".sec");
+const sec = document.querySelector(".section1");
 sec.style.background = color;
 }
+// function changeBgColorHeader(color){
+//   const header = document.querySelector(".header");
+//   header.style.background = color;
+
+// }
 
 
 
 function navBlock() {
+  var Header = document.querySelector('.header');
     var logoHeader = document.querySelector('.logoHeader');
     var signInUp = document.querySelector('.signInUp');
     var navUl = document.querySelector('.navUl');
     if (navUl.style.display === 'none') {
         navUl.style.display = 'block';
+        Header.style.height='20px';
         logoHeader.style.display = 'none'; 
         signInUp.style.display = 'none'; 
     } else {
@@ -241,6 +196,20 @@ function navBlock() {
         signInUp.style.display = 'block';  
     }
 }
+// Add the following JavaScript code
+const section5 = document.querySelector('.section5');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      section5.classList.add('animate');
+    } else {
+      section5.classList.remove('animate');
+    }
+  });
+});
+
+observer.observe(section5);
 
 
     </script>

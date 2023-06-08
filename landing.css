@@ -1,5 +1,12 @@
 
-
+.para{
+  width: 100%;
+  height: 1px;
+}
+.heightfor img{
+  height: 440px;
+  object-fit: cover;
+}
 *{
   box-sizing: border-box;
   margin: 0%;
@@ -9,6 +16,7 @@
 
 .navicon{
   display: none;
+  
 }
 header{
   z-index: 2;
@@ -16,10 +24,11 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 50px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: black ; */
 }
 header a .logoHeader{
   position: relative;
@@ -43,6 +52,10 @@ header ul li a{
   text-decoration: none;
 
 }
+header ul li a:hover{
+  color: rgb(9, 185, 255);
+}
+
 .signInUp .sign a{
   display: inline-block;
   margin-top: 20px;
@@ -105,6 +118,7 @@ padding: 0%;
   }
   .navicon {
       display: block;
+      
   }
   .content{
     flex-direction: column;
@@ -132,7 +146,9 @@ padding: 0%;
   }
   .navicon {
       display: block;
+      
   }
+
   header{
     position: fixed;
     width: 100%;
@@ -158,7 +174,7 @@ padding: 0%;
       color: black;
       position: relative;
       left: 40%;
-      top: 80px;
+      top: 140px;
       z-index: 3;
       text-align: center;
       padding: 0%;
@@ -168,8 +184,8 @@ padding: 0%;
 
 
 
-
-.sec{
+/* sections start here with media  */
+.section1{
   z-index: 3;
   position: relative;
   /* height: 1000px; */
@@ -182,8 +198,6 @@ padding: 0%;
   background-color: #1e1e1e;
   transition: 0.5s;
 }
-
-
 .content{
   position: relative;
   width: 100%;
@@ -209,7 +223,7 @@ padding: 0%;
 .content .textbox p{
 color: white;
 }
-.content .textbox a{
+.viewAllProducts{
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
@@ -222,15 +236,13 @@ color: white;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-
 }
-.content .textbox a:hover{
+.viewAllProducts:hover{
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   transition: 0.5s;
   transform: skew(-15deg);
 }
-
 .content .imgbox{
   width: 600px;
   display: flex;
@@ -256,9 +268,7 @@ color: white;
   margin: 0% 20px;
   cursor: pointer;
   transition: 0.5s;
-
 }
-
 .thumb li img{
   max-width: 50px;
 
@@ -277,7 +287,6 @@ color: white;
   grid-template-columns: auto auto auto auto;
   gap: 1.5rem;
 }
-
 .section3 .container #tin{
   padding: 20px;
   text-align: center;
@@ -307,12 +316,9 @@ color: white;
 .section3 .container #tin:hover .Content{
   top: 0;
 }
-
-
 .section3 .container .box:hover .content{
   top: 0;
 }
-
 .gallery .box-container{
   display: flex;
   flex-wrap: wrap;
@@ -322,7 +328,8 @@ color: white;
 .gallery .box-container .box{
   height: 25rem;
   flex: 1 1 20rem;
-  border: 1rem solid #fff;
+  background-color: #ffffff;
+  border: 1px solid #fff;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
   border-radius: .5rem;
   position: relative;
@@ -337,7 +344,7 @@ color: white;
 
 .gallery .box-container .box .content{
   position: absolute;
-  top: -100%; left: 0;
+  top: 100%; left: 0;
   transition: 0.5s;
   height: 100%;
   width: 100%;
@@ -377,7 +384,7 @@ color: white;
   background: rgba(253, 72, 208, 0.9);
 }
 .gallery .box-container .box #tin11{
-  background: rgba(224, 240, 255, 0.9);
+  background: rgba(56, 159, 255, 0.9);
 }
 .gallery .box-container .box #tin12{
   background: rgba(199, 157, 66, 0.9);
@@ -385,24 +392,124 @@ color: white;
 
 .gallery .box-container .box .content h3{
   font-size: 2rem;
-  color: #333;
+  color: #ffffff;
   text-align: center;
 }
 
-.gallery .box-container .box .content p{
-  font-size: 1.5rem;
-  color: #666;
-  padding: 1rem 0;
-}
 
 
 .gallery .box-container .box:hover .content{
   top: 0;
 }
+.section4 img{
+  width: 100%;
+  height: 600px;
+}
+.section5 img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 
+/* Add the following CSS properties to .section5 */
+.section5 {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Add the following CSS properties to .sec5left */
+.sec5left {
+  width: 50%;
+  height: 600px;
+  padding: 10% 5%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.sec5left h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+.sec5left p{
+  font-size: 20px;
+
+}
+
+/* Add the following CSS properties to .sec5right */
+.sec5right {
+  width: 50%;
+  height: 600px;
+  padding: 10% 5%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Add the following CSS for triggering the animation when scrolled into view */
+.section5.animate .sec5left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.section5.animate .sec5right {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
+.sec6left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+  color: white; 
+}
+.sec6left {
+  width: 50%;
+  height: 600px;
+  /* padding: 10% 5%; */
+  /* opacity: 0; */
+  /* transform: translateX(-100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; */
+}
+
+/* Add the following CSS properties to .sec5right */
+.sec6right {
+  width: 50%;
+  height: 600px;
+  padding: 10% 5%;
+  /* opacity: 0; */
+  /* transform: translateX(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; */
+}
+.sec6right h1{
+  /* letter-spacing: 10px; */
+  font-size: 100px;
+  font-weight: 900;
+
+}
+.sec6right h2{
+  font-size: 65px;
+  font-weight: 900;
+}
+.sec6right h3{
+  font-size: 41px;
+  font-weight: 900;
+}
 /* Footer with media screen*/
 .footer{
   height: 300px;
@@ -411,9 +518,10 @@ background-image: url(./Images/footer\ back.png);
   display: flex;
 }
 .footersec img{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin-top: 3%;
+
 }
 .footersec p{
   font-size: 20px;
@@ -424,15 +532,6 @@ background-image: url(./Images/footer\ back.png);
   margin: 3% auto;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
 
 
 
