@@ -1,54 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="landing.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="./Images/pepsi.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="landing.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
-  <div class="contactMain">
-    <div class="contactHeader">
-      <h1>Contact With Us</h1>
-      <p>Get in touch with Us, We will be happy to answer your questions.</p>
-  </div>
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" required>
+  <style>
+    .body{
+      background-color: black;
+    }
+    form h1{
+      text-align: center;
+      font-weight: 800;
+      font-size: 40px;
+      color: #1e1e1e;
+    }
+    .contactmain{
+      width: 100%;
+      height: 700px;
+      display: flex;
+      padding: 0 10%;
+      margin-top: 150px;
+    }
+    .left{
+      width: 60%;
+      height: 450px;
+      background-color: white;
+      box-shadow: 2px 2px 2px gray;
+      padding: 2% 5%;
+
+    }
+    .right{
+      width: 40%;
+      height: 450px;
+      background-color: #1e1e1e;
+      box-shadow: 2px 2px 2px gray;
+      color: white;
+      padding: 2%;
+    }
+    .right h1{
+      text-align: center;
+      font-weight: 900;
+      font-size: 30px;
+    }
+    .right h2{
+      font-weight: 900;
+      font-size: x-large;
+
+    }
+    .input1{
+      width: 100%;
+      height: 30px;
+      margin: 5px;
+      border: 2px solid gray;
+      border-radius: 5px;
+    }
+    #texarea{
+      height: 100px !important;
+    }
+    form ::placeholder{
+font-size: 16px;
+padding-left: 20px;
+font-weight: 600;
+    }
+    .section2{
+      width: 100%;
+      height: 500px;
+    }
+    .section2 iframe{
+      width: 100%;
+      height: 500px;
+    }
+    @media (max-width: 800px) {
+      .contactmain{
+      width: 80%;
+      /* height: 700px; */
+      flex-direction: column;
+      padding: 0 10%;
+    }
+    .left{
+      width: 90%;
+      height: 450px;
+      background-color: white;
+      box-shadow: 2px 2px 2px gray;
+      padding: 2% 5%;
+
+    }
+    .right{
+      width: 90%;
+      height: 450px;
+      background-color: rgb(2, 2, 2);
+      box-shadow: 2px 2px 2px gray;
+      color: white;
+      padding: 2% 5%;
+    }
+    }
+  </style>
+  <div class="body">
+    <header class="header" style="background: transparent !important;">
+      <a href="./index.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
+      
+      <ul class="navUl">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./index.html#section4">What's New</a></li>
+          <li><a href="./dealers.html">Dealers</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+  
+      </ul>
+      <ul class="signInUp">
+        <li class="sign"><a href="./SignUp.html">Login</a></li>
+        <!-- <li class="sign"><a href="#">Login</a></li> -->
+      </ul>
+      <div class="navicon">
+          <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="navBlock()"></i>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" required></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-  <section class="location">
-    <!-- <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.333396145632!2d66.9816620407853!3d24.960520403369337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb36b23ff4af895%3A0x80391c2d4e44ec73!2sBurhan%20Online%20Store!5e0!3m2!1sen!2s!4v1684567935222!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="cardlocation">
-      <h2>Get In Touch With Us</h2>
-      <div class="iconhead">
-        <i class="fa-duotone fa-location-dot"></i>
-     <h4>Our Location</h4>
-      </div>
-    </div> -->
-    <div class="div1">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.333396145632!2d66.9816620407853!3d24.960520403369337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb36b23ff4af895%3A0x80391c2d4e44ec73!2sBurhan%20Online%20Store!5e0!3m2!1sen!2s!4v1684567935222!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="div2">
-      <div class="iconhead">
-        <div class="icon">
-          <i class="fa-brands fa-square-twitter fa-2xl" style="color: #525252"></i>        
+  </header>
+    <div class="heightfor">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="./Images/contactbanner1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/contactBanner2.jpg" class="d-block w-100" alt="...">
+            </div>
+  
+            <div class="carousel-item active">
+              <img src="./Images/contactbanner3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <h4>Our Location</h4>
+      </div>
+  <section class="contactmain">
+    <div class="left">
+<form>
+  <h1>Contact Us</h1>
+  <div class="input">
+    <input class="input1" type="text" placeholder="Name">
+    <input class="input1" type="number" placeholder="Contact ">
+    <input class="input1" type="email" placeholder="Email">
+    <textarea id="texarea" class="input1" placeholder="Massage"></textarea>
+  </div>
+</form>
+    </div>
+    <div class="right">
+    <h1>Get In Touch With Us</h1><br>
+    <h2>Location</h2>
+    <p>Ghaziabad Bilal Society Orangi Town Karachi</p>
+    <h2>Our Contact</h2>
+    <p>0318122679</p>
+    <h2>Our Email</h2>
+    <p>rahilsaleem565@gmail.com</p>
+        </div>
+  </section>
+  <section class="section2">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14467.279167797893!2d66.97457939076502!3d24.97224514749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb36a88b108c21d%3A0x80579c46f9a5fbc7!2sGhaziabad%20Orangi%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1686244974867!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footersec">
+      <img
+        src="./Images/pepsi.png"
+        alt=""
+      />
+      <p> <b>pepsi</b></p>
+    </div>
+    <div class="footersec">
+      <a href="https://contact.pepsico.com/pepsi/terms-conditions">Term & Condition</a><br>
+      <a href="https://contact.pepsico.com/pepsi/privacy-policy">Privacy Policy</a><br>
+    <a href="./contactUs.html">Contact Us</a><br>
+    <a href="https://www.pepsicopartners.com/pepsico/en/USD/partner/leadgeneration">Serve Pepsi</a>
+
+    </div>
+    <div class="footersec">        
+      <a href="https://www.pepsi.com/en-us/copyright/">Copy Tight</a><br>
+      <a href="https://www.pepsicoproductfacts.com/">Product Facts</a><br>
+      <a href="./dealers.html">Store Locator</a><br>
+      <a href="https://policy.pepsi.com/aboutads.htm">Careers</a>
+    </div>
+    <div class="footersec">
+      <h3>Connect</h3>
+      <div class="imagesfooter">
+        <a href="https://www.instagram.com/pepsi/">
+          <i class="fa-brands fa-square-instagram fa-2xl" style="color: #525252;"></i>
+        </a>
+        <a href="https://www.facebook.com/pepsi/?brand_redir=56381779049">
+          <i
+            class="fa-brands fa-square-facebook fa-2xl"
+            style="color: #7a7a7a"
+          ></i>
+        </a>
+        <a href="https://twitter.com/pepsi">
+         <i class="fa-brands fa-square-twitter fa-2xl" style="color: #525252"></i> 
+        </a>
       </div>
     </div>
-  </section>
+  </footer>
 </div>
 </body>
 </html>

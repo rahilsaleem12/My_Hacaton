@@ -29,14 +29,14 @@
 
 <section class="section1">
   <header class="header">
-    <a href=""><img src="./Images/pepsi.png" class="logoHeader"></a>
+    <a href="./index.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
     
     <ul class="navUl">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./products.html">Products</a></li>
         <li><a href="#section4">Whats New</a></li>
-        <li><a href="#">Dealers</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="./dealers.html">Dealers</a></li>
+        <li><a href="./contactUs.html">Contact</a></li>
 
     </ul>
     <ul class="signInUp">
@@ -59,8 +59,8 @@
       <a href="./products.html" class="viewAllProducts">View All Products</a>
       <ul class="thumb">
         <li><img src="./Images/pepsiBlackNew.png" onclick="imgSlider('./Images/pepsiBlackNew.png');changeBgColor('#1e1e1e');changeBgColorHeader('#000000')"></li>
-        <li><img src="./Images/pepsi silver.png" onclick="imgSlider('./Images/pepsi silver.png');changeBgColor('#e60c2c');changeBgColorHeader('#e60c2c')"></li>
-        <li><img src="./Images/PepsiTin.png" onclick="imgSlider('./Images/PepsiTin.png');changeBgColor('#0072F3');changeBgColorHeader('#0072F3')"></li>
+        <li><img src="./Images/pepsi silver.png" onclick="imgSlider('./Images/pepsi silver.png');changeBgColor('#e60c2c');changeBgColorHeader('transparent')"></li>
+        <li><img src="./Images/PepsiTin.png" onclick="imgSlider('./Images/PepsiTin.png');changeBgColor('#0072F3');changeBgColorHeader('transparent')"></li>
       </ul>
     </div>
     <div class="imgbox">
@@ -89,17 +89,30 @@
 <img src="./Images/3in1Image.png" alt="">
   </div>
 </section>
-
+<section id="section7" class="section7">
+  <div class="sec7left">
+    <img src="./Images/PepsiNitrosection.png" alt="">
+  </div>
+  <div class="sec7right">
+    <img src="./Images/PepsiNitroIRightImg.png" alt="">
+    <div class="sec7viewallpro">
+      <h3>SMOOTH AND CREAMY</h3>
+      <a href="./products.html" class="viewAllProducts">View All Products</a>
+    </div>
+  </div>
+</section>
 
 <section class="section6">
   <div class="sec6left">
-<img src="./Images/section6BlackTin.png" alt="">
-  </div>
-  <div class="sec6right">
     <h1> NEW LOOK</h1>
     <H2>ZERO SUGAR</H2>
     <H3>ZERO COMPROMIZE</H3>
+    <a href="./products.html" class="viewAllProducts">View All Products</a>
   </div>
+  <div class="sec6right">
+<img src="./Images/section6BlackTin.png" alt="">
+  </div>
+ 
 </section>
 
 
@@ -125,35 +138,31 @@
           <p> <b>pepsi</b></p>
         </div>
         <div class="footersec">
-          <h3>Section</h3>
-          <p>Sponsorship</p>
-          <p>2021 World Tour</p>
-          <p>Gear For Sale</p>
-          <p>Privacy Policy</p>
+          <a href="https://contact.pepsico.com/pepsi/terms-conditions">Term & Condition</a><br>
+          <a href="https://contact.pepsico.com/pepsi/privacy-policy">Privacy Policy</a><br>
+        <a href="./contactUs.html">Contact Us</a><br>
+        <a href="https://www.pepsicopartners.com/pepsico/en/USD/partner/leadgeneration">Serve Pepsi</a>
+ 
         </div>
-        <div class="footersec">
-          <h3>Projects</h3>
-          <p>52inKicks.com</p>
-          <p>CarbonSugar.com</p>
-          <p>GetWindsurFit.com</p>
-          <p>Brisbane Digital Agency</p>
+        <div class="footersec">        
+          <a href="https://www.pepsi.com/en-us/copyright/">Copy Tight</a><br>
+          <a href="https://www.pepsicoproductfacts.com/">Product Facts</a><br>
+          <a href="./dealers.html">Store Locator</a><br>
+          <a href="https://policy.pepsi.com/aboutads.htm">Careers</a>
         </div>
         <div class="footersec">
           <h3>Connect</h3>
           <div class="imagesfooter">
-            <a href="#">
-              <i
-                class="fa-brands fa-square-whatsapp fa-2xl"
-                style="color: #575757"
-              ></i>
+            <a href="https://www.instagram.com/pepsi/">
+              <i class="fa-brands fa-square-instagram fa-2xl" style="color: #525252;"></i>
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/pepsi/?brand_redir=56381779049">
               <i
                 class="fa-brands fa-square-facebook fa-2xl"
                 style="color: #7a7a7a"
               ></i>
             </a>
-            <a href="#">
+            <a href="https://twitter.com/pepsi">
              <i class="fa-brands fa-square-twitter fa-2xl" style="color: #525252"></i> 
             </a>
           </div>
@@ -172,11 +181,11 @@ function changeBgColor(color){
 const sec = document.querySelector(".section1");
 sec.style.background = color;
 }
-// function changeBgColorHeader(color){
-//   const header = document.querySelector(".header");
-//   header.style.background = color;
+function changeBgColorHeader(color){
+  const header = document.querySelector(".header");
+  header.style.background = color;
 
-// }
+}
 
 
 
@@ -193,6 +202,7 @@ function navBlock() {
     } else {
         navUl.style.display = 'none';
         logoHeader.style.display = 'block';
+        Header.style.height='70px';
         signInUp.style.display = 'block';  
     }
 }
@@ -210,6 +220,18 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(section5);
+window.addEventListener('scroll', function() {
+  var section7 = document.getElementById('section7');
+  var section7Top = section7.offsetTop;
+  var section7Height = section7.offsetHeight;
+  var windowHeight = window.innerHeight;
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > section7Top - windowHeight + section7Height / 2) {
+    document.querySelector('.sec7left').style.top = '0';
+    document.querySelector('.sec7right').style.top = '0';
+  }
+});
 
 
     </script>
