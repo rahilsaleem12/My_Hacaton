@@ -1,4 +1,72 @@
+/* sliders */
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+}
+.wrapper .dynamic-txts{
+  margin-left: -10px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 800;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 160%;
+  width: 100%;
+  background: #1e1e1e;
+  /* border-left: 2px solid #FC6D6D; */
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+      
+      @keyframes dynamic-text-animation {
+        0% {
+          width: 0;
+        }
+        20% {
+          width: 100%;
+        }
+        80% {
+          width: 100%;
+        }
+        100% {
+          width: 0;
+        }
+      }
 
+      
 .para{
   width: 100%;
   height: 1px;
@@ -27,7 +95,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: transparent !important;
+  
 }
 header a .logoHeader{
   position: relative;

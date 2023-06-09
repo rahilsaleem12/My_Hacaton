@@ -23,16 +23,27 @@
     />
   </head>
   <body>
+    <style>
+.circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1538ff;
+        clip-path: circle(70% at right -20%);
+    }
+      </style>
     <div class="main">
   
 
 
 <section class="section1">
   <header class="header">
-    <a href="./index.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
+    <a href="./home.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
     
     <ul class="navUl">
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="./home.html">Home</a></li>
         <li><a href="./products.html">Products</a></li>
         <li><a href="#section4">Whats New</a></li>
         <li><a href="./dealers.html">Dealers</a></li>
@@ -51,16 +62,24 @@
 
   <div class="content">
     <div class="textbox">
+      <div class="wrapper">
+        <!-- <div class="static-txt">I'm a</div> -->
+        <ul class="dynamic-txts">
+          <li><span>That's What I Like</span></li>
+          <li><span>Why Not Meri Jan</span></li>
+          <li><span>Ab Har GhontStrong</span></li>
+          <li><span>Bold Refreshing</span></li>
+        </ul>
+      </div>
 
-      <h2>That's What <br><span>I like</span></h2>
       <p>Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.
 
       </p>
       <a href="./products.html" class="viewAllProducts">View All Products</a>
       <ul class="thumb">
-        <li><img src="./Images/pepsiBlackNew.png" onclick="imgSlider('./Images/pepsiBlackNew.png');changeBgColor('#1e1e1e');changeBgColorHeader('#000000')"></li>
+        <li><img src="./Images/pepsiBlackNew.png" onclick="imgSlider('./Images/pepsiBlackNew.png');changeBgColor('#1e1e1e');changeBgColorHeader('transparent')"></li>
         <li><img src="./Images/pepsi silver.png" onclick="imgSlider('./Images/pepsi silver.png');changeBgColor('#e60c2c');changeBgColorHeader('transparent')"></li>
-        <li><img src="./Images/PepsiTin.png" onclick="imgSlider('./Images/PepsiTin.png');changeBgColor('#0072F3');changeBgColorHeader('transparent')"></li>
+        <li><img src="./Images/PepsiTin.png" onclick="imgSlider('./Images/PepsiTin.png');changeBgColor('#1538ff');changeBgColorHeader('transparent')"></li>
       </ul>
     </div>
     <div class="imgbox">
@@ -173,68 +192,7 @@
 
 
 
-    <script>
-function imgSlider(anything){
-document.querySelector(".boxImg").src = anything;
-}
-function changeBgColor(color){
-const sec = document.querySelector(".section1");
-sec.style.background = color;
-}
-function changeBgColorHeader(color){
-  const header = document.querySelector(".header");
-  header.style.background = color;
-
-}
-
-
-
-function navBlock() {
-  var Header = document.querySelector('.header');
-    var logoHeader = document.querySelector('.logoHeader');
-    var signInUp = document.querySelector('.signInUp');
-    var navUl = document.querySelector('.navUl');
-    if (navUl.style.display === 'none') {
-        navUl.style.display = 'block';
-        Header.style.height='20px';
-        logoHeader.style.display = 'none'; 
-        signInUp.style.display = 'none'; 
-    } else {
-        navUl.style.display = 'none';
-        logoHeader.style.display = 'block';
-        Header.style.height='70px';
-        signInUp.style.display = 'block';  
-    }
-}
-// Add the following JavaScript code
-const section5 = document.querySelector('.section5');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      section5.classList.add('animate');
-    } else {
-      section5.classList.remove('animate');
-    }
-  });
-});
-
-observer.observe(section5);
-window.addEventListener('scroll', function() {
-  var section7 = document.getElementById('section7');
-  var section7Top = section7.offsetTop;
-  var section7Height = section7.offsetHeight;
-  var windowHeight = window.innerHeight;
-  var scrollPosition = window.scrollY;
-
-  if (scrollPosition > section7Top - windowHeight + section7Height / 2) {
-    document.querySelector('.sec7left').style.top = '0';
-    document.querySelector('.sec7right').style.top = '0';
-  }
-});
-
-
-    </script>
+<script src="app.js"></script>
 
 
 

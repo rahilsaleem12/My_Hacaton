@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="landing.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -12,13 +14,120 @@
     
 </head>
 <body>
+  <style>
+    .producttopsection{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1e1e1e;
+
+    }
+    
+    .productcontent{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .productcontent .producttextbox{
+        position: relative;
+        max-width: 600px;
+        margin-right: 20px;
+
+    }
+    .productcontent .producttextbox h2{
+        color: #fff;
+        font-size: 3em;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+        font-weight: 700;
+    }
+    .productcontent .producttextbox p{
+        color: #fff;
+
+    }
+    
+    .prodctsci{
+        position: absolute;
+        bottom: 40px;
+        left: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prodctsci li a{
+        display: inline;
+        margin-left: 15px;
+        background: #222;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+
+    }
+    .prodctsci li a:hover{
+        background: black;
+        transform: translateY(-10px);
+    }
+    .prodctsci li a img{
+        filter: invert(1);
+        scale: (0.5);
+    }
+/* slider */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+.swiper-slide img{
+    position: absolute;
+    bottom: 0;
+    min-height: 100%;        
+}
+
+.productcontent .imgbx{
+   width: 500px;
+   display: flex;
+   justify-content: flex-end;
+
+}
+.productcontent .imgbx img{
+    max-width: 150px;
+
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right
+{
+background-image: none;
+}  
+
+
+</style>
   <header class="header" style="background: transparent!important;">
-    <a href="./index.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
+    <a href="./home.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
     
     <ul class="navUl">
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="./home.html">Home</a></li>
         <li><a href="./products.html">Products</a></li>
-        <li><a href="./index.html#section4">Whats New</a></li>
+        <li><a href="./home.html#section4">Whats New</a></li>
         <li><a href="./dealers.html">Dealers</a></li>
         <li><a href="./contactUs.html">Contact</a></li>
 
@@ -32,30 +141,50 @@
     </div>
 </header>
 
-<div class="heightfor">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <img src="./Images/banner2Products.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./Images/banner1Products.jpg" class="d-block w-100" alt="...">
-          </div>
 
-          <div class="carousel-item active">
-            <img src="./Images/pepsi-zero-zucker.jpg" class="d-block w-100" alt="...">
-          </div>
+<section class="producttopsection">
+
+  <div class="productcontent">
+      <div class="producttextbox">
+        <div class="wrapper">
+          <!-- <div class="static-txt">I'm a</div> -->
+          <ul class="dynamic-txts">
+            <li><span>That's What I Like</span></li>
+            <li><span>Why Not Meri Jan</span></li>
+            <li><span>Ab Har GhontStrong</span></li>
+            <li><span>Bold Refreshing</span></li>
+          </ul>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione facere iure dolorum, voluptatem, itaque laudantium omnis sunt fugiat cumque voluptatibus cupiditate quasi sint delectus. Cum consequuntur dolor ea similique?</p>
+          <a href="./products.html" class="viewAllProducts">View All Products</a>
       </div>
-    </div>
+
+<div class="imgbx">
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/nitro/PEP_NItro_DraftCola_Can_Vanilla.png"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/nitro/PEP_NItro_DraftCola_Can.png"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-mango.png"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar-mango.png"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-cherry-v2.png?mtime=20180110134748"/></div>
+    <div class="swiper-slide"><img src="https://www.pepsi.com/en-us/uploads/images/can-real-sugar-reg.png?mtime=20180110134758"/></div>
+
+  </div>
+</div>
+</div>
+</div>
+  <ul class="prodctsci">
+<li><a href="#"><img src="Images/facebook.png" alt=""></a></li>
+<li><a href="#"><img src="Images/twitter.png" alt=""></a></li>
+<li><a href="#"><img src="Images/instagram.png" alt=""></a></li>
+  </ul>
+</section>
+
+
+
       <div class="para">
         <p></p>
       </div>
@@ -181,5 +310,6 @@
         </div>
       </footer>
 
+        <script src="app.js"></script>
 </body>
 </html>

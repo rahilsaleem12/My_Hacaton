@@ -89,12 +89,27 @@ font-weight: 600;
       width: 100%;
       height: 500px;
     }
+    .input a input{
+      font-weight: 900;
+      color: white;
+      text-align: center;
+      width: 100%;
+      height: 30px;
+      margin: 5px;
+      background-color: #1e1e1e;
+      border-radius: 5px;
+    }
+    .input a input:hover{
+      background-color: #2e2d2d;
+
+    }
     @media (max-width: 800px) {
       .contactmain{
-      width: 80%;
-      /* height: 700px; */
+      width: 100%;
+      height: 1000px;
       flex-direction: column;
-      padding: 0 10%;
+      padding: 0;
+      margin: 0;
     }
     .left{
       width: 90%;
@@ -113,15 +128,16 @@ font-weight: 600;
       padding: 2% 5%;
     }
     }
+    
   </style>
   <div class="body">
     <header class="header" style="background: transparent !important;">
-      <a href="./index.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
+      <a href="./home.html"><img src="./Images/pepsi.png" class="logoHeader"></a>
       
       <ul class="navUl">
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="./home.html">Home</a></li>
           <li><a href="./products.html">Products</a></li>
-          <li><a href="./index.html#section4">What's New</a></li>
+          <li><a href="./home.html#section4">What's New</a></li>
           <li><a href="./dealers.html">Dealers</a></li>
           <li><a href="./contactUs.html">Contact</a></li>
   
@@ -167,6 +183,7 @@ font-weight: 600;
     <input class="input1" type="number" placeholder="Contact ">
     <input class="input1" type="email" placeholder="Email">
     <textarea id="texarea" class="input1" placeholder="Massage"></textarea>
+    <a href=""><input id="submit" type="submit" placeholder="submit"></a>
   </div>
 </form>
     </div>
@@ -225,5 +242,6 @@ font-weight: 600;
     </div>
   </footer>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
