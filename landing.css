@@ -92,7 +92,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent !important;
+  background-color: black;
+  opacity: 0.5;
   
 }
 header a .logoHeader{
@@ -100,7 +101,25 @@ header a .logoHeader{
   max-width: 80px;
   width: 80px ;
   height: 80px;
+
+  
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+header a .logoHeader:hover {
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  animation: spin 2s infinite linear;
+  /* animation-play-state: paused; */
+}
+
 
 header ul{
   position: relative;
@@ -112,7 +131,7 @@ header ul li{
 header ul li a{
   display: inline-block;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
   margin-left: 40px;
   text-decoration: none;
 
