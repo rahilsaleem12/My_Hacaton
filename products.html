@@ -92,6 +92,7 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
+  background: transparent;
   width: 180px;
   height: 500px;
   display: flex;
@@ -104,6 +105,7 @@
 }
 
 .productcontent .imgbx{
+  
    width: 500px;
    display: flex;
    justify-content: flex-end;
@@ -118,6 +120,105 @@
 {
 background-image: none;
 }  
+@media (max-width: 500px) {
+  .producttopsection{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1e1e1e;
+
+    }
+    
+    .productcontent{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .productcontent .producttextbox{
+        position: relative;
+        max-width: 100%;
+        margin-right: 0px;
+
+    }
+    .productcontent .producttextbox h2{
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+        font-weight: 700;
+    }
+    
+    .prodctsci{
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prodctsci li a{
+        display: inline;
+        margin-left: 5px;
+        background: #222;
+        width: 50%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+
+    }
+    .prodctsci li a:hover{
+        background: black;
+        transform: translateY(-10px);
+    }
+    .prodctsci li a img{
+        filter: invert(1);
+        scale: (0.5);
+    }
+
+    .swiper {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  margin: 0 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background: transparent;
+  width: 180px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide img{
+    position: absolute;
+    bottom: 0;
+    min-height: 100%;        
+}
+
+.productcontent .imgbx{
+  
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+
+}
+.productcontent .imgbx img{
+    max-width: 150px;
+
+}
+
+}
 
 
 </style>
@@ -149,13 +250,18 @@ background-image: none;
         <div class="wrapper">
           <!-- <div class="static-txt">I'm a</div> -->
           <ul class="dynamic-txts">
-            <li><span>That's What I Like</span></li>
-            <li><span>Why Not Meri Jan</span></li>
-            <li><span>Ab Har GhontStrong</span></li>
-            <li><span>Bold Refreshing</span></li>
+            <li><span>PEPSI 0 SUGAR</span></li>
+            <li><span>PEPSI REGULAR</span></li>
+            <li><span>PEPSI DIET </span></li>
+            <li><span>PEPSI MANGO</span></li>
+            <li><span>PEPSI 0 SUGAR MANGO</span></li>
+            <li><span>PEPSI DIET MANGO</span></li>
+            <li><span>PEPSI NITRO</span></li>
+            <li><span>PEPSI NITRO 0 SUGAR</span></li>
           </ul>
         </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione facere iure dolorum, voluptatem, itaque laudantium omnis sunt fugiat cumque voluptatibus cupiditate quasi sint delectus. Cum consequuntur dolor ea similique?</p>
+          <p>  Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.
+          </p>
           <a href="./products.html" class="viewAllProducts">View All Products</a>
       </div>
 
@@ -309,7 +415,27 @@ background-image: none;
           </div>
         </div>
       </footer>
-
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true
+    });
+      </script>
         <script src="app.js"></script>
 </body>
 </html>

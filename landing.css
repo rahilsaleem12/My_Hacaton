@@ -2,11 +2,11 @@
 .wrapper{
   display: flex;
 }
-.wrapper .static-txt{
+/* .wrapper .static-txt{
   color: #fff;
   font-size: 30px;
   font-weight: 800;
-}
+} */
 .wrapper .dynamic-txts{
   margin-left: -10px;
   height: 90px;
@@ -27,6 +27,7 @@
     top: -360px;
   }
 }
+
 .dynamic-txts li span{
   position: relative;
   margin: 5px 0;
@@ -819,11 +820,11 @@ background-image: url(./Images/footer\ back.png);
 
 
 /* about us ki css */
-.carousel-control-prev:hover,
+/* .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: transparent;
 }
-
+ */
 
 
 
