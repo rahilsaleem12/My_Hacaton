@@ -6,10 +6,10 @@ function changeBgColor(color){
 const sec = document.querySelector(".section1");
 sec.style.background = color;
 }
-function changeBgColorHeader(color){
-  const header = document.querySelector(".circle");
-  header.style.background = color;
 
+function changeBgColorHeader(color){
+  const spancolor = document.querySelector(".spancolor");
+  spancolor.style.background = color;
 }
 
 
