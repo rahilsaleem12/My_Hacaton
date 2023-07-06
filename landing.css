@@ -93,7 +93,7 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.7;
   
 }
 header a .logoHeader{
@@ -137,7 +137,7 @@ header ul li a{
 
 }
 header ul li a:hover{
-  color: rgb(9, 185, 255);
+  color: #d3d3d3;
 }
 
 .signInUp .sign a{
@@ -205,6 +205,7 @@ padding: 0%;
   header a .logoHeader{
     width: 40px;
     height: 40px;
+   
   }
   
 
