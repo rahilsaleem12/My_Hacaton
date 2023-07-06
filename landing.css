@@ -96,7 +96,7 @@ header{
   opacity: 0.7;
   
 }
-header a .logoHeader{
+.logoHeader{
   position: relative;
   max-width: 80px;
   width: 80px ;
@@ -113,7 +113,7 @@ header a .logoHeader{
   }
 }
 
-header a .logoHeader:hover {
+.logoHeader:hover {
   border-radius: 50%;
   transition: all 0.3s ease;
   animation: spin 2s infinite linear;
@@ -627,6 +627,7 @@ color: white;
 
 /* Footer with media screen*/
 .footermain{
+
   background-image: url(./Images/footer\ back.png);
   
 }
@@ -635,17 +636,18 @@ text-align: center;
 color: white;
 font-size: 15px;
 padding: 20px 0;
+margin-bottom: 0;
 }
 .footer{
 padding: 25px 0;
   height: 200px;
   width: 100%;
+  
 
   display: flex;
 }
 .footersec img{
-  width: 100px;
-  height: 100px;
+
   margin-top: 3%;
 
 }
@@ -654,6 +656,9 @@ padding: 25px 0;
   font-size: 20px;
   color: white;
   font-weight: 500;
+}
+.footersec a:hover{
+  color: gray;
 }
 .footersec{
   width: 25%;
@@ -677,6 +682,7 @@ padding: 25px 0;
     font-size: 12px;
     font-weight: 500;
     padding:20px 5%;
+    margin-bottom: 0;
     }
   .footersec{
     width: 50%;
