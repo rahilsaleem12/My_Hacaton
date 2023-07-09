@@ -43,6 +43,7 @@
   /* border-left: 2px solid #FC6D6D; */
   animation: typing 3s steps(10) infinite;
 }
+
 @keyframes typing {
   40%, 60%{
     left: calc(100% + 30px);
@@ -815,7 +816,7 @@ padding: 25px 0;
   font-size: 35px;
   font-weight: 800;
 }
-.section7 {
+.sec7left {
 
   display: none;
 }
@@ -823,13 +824,28 @@ padding: 25px 0;
 
 
 
+.sec7right {
+  width: 90%;
+  height: 80%;
+  padding: 5% 0%;
+  /* padding-right: 10%; */
+  /* color: white; */
+  /* position: absolute; */
+  /* top: 100%; */
+  /* right: 0; */
+  /* transition: top 1s; */
+}
+
 .sec7right img {
   width: 80%;
-  height: 100%;
+  margin: 0% auto;
+  text-align: center;
+  height: 80%;
 }
 
 .sec7viewallpro {
-  padding-right: 25%;
+  width: 80%;
+  padding: 5% 0%;
   text-align: center;
 }
 }

@@ -7,10 +7,11 @@ const sec = document.querySelector(".section1");
 sec.style.background = color;
 }
 
-function changeBgColorHeader(color){
-  const spancolor = document.querySelector(".spancolor");
-  spancolor.style.background = color;
-}
+// function changeEffectColor1(){
+//   const changeEffectColor1 = document.querySelector(".spancolor");
+//   changeEffectColor1.background="red";
+// }
+
 
 
 
