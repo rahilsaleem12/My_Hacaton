@@ -697,6 +697,11 @@ padding: 25px 0;
   }
 }
 @media  (max-width:500px) {
+  .footermain{
+
+    /* background-image: url(./Images/sign.jpg); */
+    
+  }
   .footer{
     padding: 50px 0;
     height: 700px;
